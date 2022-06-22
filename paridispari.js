@@ -13,25 +13,20 @@ if (userGuess % 2 === 0) {
   console.log("you have choosen odd number:", userGuess);
 }
 
-//console.log(parameter());
+let aiGuess;
 
-function aiRandomNumber(parameter) {
-  const aiGuess = Math.floor(Math.random() * 5) + 1;
-  console.log(aiGuess);
-  console.log(parameter);
-  //return aiGuess;
+let nElements = 5;
+
+function aiRandomNumber(nElements) {
+  console.log(Math.floor(Math.random() * nElements) + 1);
 }
 
-//console.log(aiRandomNumber);
-
 function isEven() {
-  for (let i = 0; i < 1; i++) {
-    if ((userGuess + aiGuess) % (2 === 0)) {
-      console.log("usr Win");
-    } else if ((userGuess + aiGuess) % (2 !== 0)) {
-      console.log("ai Win");
-    } else {
-      console.log("insert a valid number");
-    }
+  if ((userGuess + aiGuess) % (2 === 0)) {
+    console.log("usr Win");
+  } else if ((userGuess + aiGuess) % (2 !== 0)) {
+    console.log("ai Win");
+  } else {
+    console.log("insert a valid number");
   }
 }
