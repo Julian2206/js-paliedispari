@@ -5,6 +5,7 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
 
+// ask user number rage from
 const userGuess = parseInt(prompt("enter a range between 0-5"));
 
 if (userGuess % 2 === 0) {
@@ -18,6 +19,7 @@ let nElements = 5;
 const aiGuess = aiRandomNumber(nElements);
 console.log(`aiGuess is: ${aiGuess}`);
 
+// function for Comp. calc.
 function aiRandomNumber(nElements) {
   const randomNumber = Math.floor(Math.random() * nElements) + 1;
   return randomNumber;
