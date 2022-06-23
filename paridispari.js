@@ -13,16 +13,14 @@ if (userGuess % 2 === 0) {
   console.log("you have choosen odd number:", userGuess);
 }
 
-let aiGuess;
-
 let nElements = 5;
 
-const randomNumber = aiRandomNumber(nElements);
-console.log(randomNumber);
+const aiGuess = aiRandomNumber(nElements);
+console.log(`aiGuess is: ${aiGuess}`);
 
 function aiRandomNumber(nElements) {
-  const aiGuess = Math.floor(Math.random() * nElements) + 1;
-  return aiGuess;
+  const randomNumber = Math.floor(Math.random() * nElements) + 1;
+  return randomNumber;
 }
 
 function isEven() {
