@@ -17,8 +17,12 @@ let aiGuess;
 
 let nElements = 5;
 
+const randomNumber = aiRandomNumber(nElements);
+console.log(randomNumber);
+
 function aiRandomNumber(nElements) {
-  console.log(Math.floor(Math.random() * nElements) + 1);
+  const aiGuess = Math.floor(Math.random() * nElements) + 1;
+  return aiGuess;
 }
 
 function isEven() {
